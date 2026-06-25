@@ -1,0 +1,18 @@
+{
+  "name": "Femdom Porn Progress Tracker",
+  "short_name": "Femdom Tracker",
+  "description": "A private, offline tracker for femdom-porn usage, gooning, dependency, emotional and identity attachment, and progression over time. All data stays on your device.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0710",
+  "theme_color": "#0b0710",
+  "lang": "en",
+  "categories": ["lifestyle", "health", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

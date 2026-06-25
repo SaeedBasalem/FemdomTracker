@@ -9,6 +9,13 @@
   <meta name="description" content="A private, offline, local-only tracker for your long-term relationship with femdom porn — usage, gooning, dependency, identity attachment and progression over time." />
   <title>Femdom Porn Progress Tracker</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  <!-- PWA: installable / offline -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Femdom Tracker" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -53,5 +60,16 @@
   <script src="js/views.js"></script>
   <script src="js/report.js"></script>
   <script src="js/app.js"></script>
+
+  <!-- PWA: register the offline service worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function (err) {
+          console.warn('Service worker registration failed:', err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
