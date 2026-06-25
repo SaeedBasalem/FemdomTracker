@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0710" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="A private, offline, local-only tracker for your long-term relationship with femdom porn — usage, gooning, dependency, identity attachment and progression over time." />
+  <title>Femdom Porn Progress Tracker</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- top bar (mobile) -->
+  <header class="topbar">
+    <button id="menu-btn" class="icon-btn" aria-label="Menu">☰</button>
+    <div class="brand"><span class="brand-mark">📊</span> Femdom Progress Tracker</div>
+    <a href="#/log" class="icon-btn" aria-label="Add entry">＋</a>
+  </header>
+
+  <div class="layout">
+    <!-- sidebar / drawer -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">📊</span>
+        <div>
+          <div class="sidebar-title">Femdom Progress</div>
+          <div class="sidebar-sub">Personal tracker</div>
+        </div>
+      </div>
+      <nav id="nav-links" class="nav"></nav>
+      <div class="sidebar-foot">
+        <span class="dot-private"></span> Private · stored only on this device
+      </div>
+    </aside>
+
+    <!-- main -->
+    <main class="main">
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+
+  <!-- mobile bottom tabs -->
+  <nav id="tabbar" class="tabbar"></nav>
+
+  <!-- drawer scrim -->
+  <div id="scrim" class="scrim"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/report.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
